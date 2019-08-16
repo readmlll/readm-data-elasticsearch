@@ -12,6 +12,7 @@ import org.elasticsearch.search.fetch.subphase.highlight.HighlightBuilder;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.autoconfigure.admin.SpringApplicationAdminJmxAutoConfiguration;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.domain.Sort;
@@ -40,8 +41,13 @@ public class PaperApplicationTests {
     SentenceRepository_ES sentenceRepository_es;
 
 
-    @Autowired
-    EsRestClient esRestClient;
+
+
+    @Test
+    public void us(){
+
+    }
+
 
 
     @Test
@@ -66,7 +72,7 @@ public class PaperApplicationTests {
         sentencs.get(1).setId("8");
         sentencs.get(2).setId("10");
 
-        //sentenceRepository_es.saveAll(sentencs);
+        sentenceRepository_es.saveAll(sentencs);
         //bRes=sentenceRepository_es
        // nRes=sentenceRepository_es.deleteAll(sentencs);
         //System.out.println(sentenceRepository_es.deleteAll());
@@ -86,7 +92,7 @@ public class PaperApplicationTests {
         });
 
 
-        //sentenceRepository_es.deleteAll();
+        sentenceRepository_es.deleteAll();
 
 
         sentenceRepository_es.findAll(page).getContent().forEach(item ->{
@@ -94,6 +100,9 @@ public class PaperApplicationTests {
         });
 
 
+
+
+        sentenceRepository_es.saveAll(sentencs);
         // 高亮设置
 
             HighlightBuilder.Field highlightField = new HighlightBuilder.Field("translateText");
@@ -137,6 +146,21 @@ public class PaperApplicationTests {
                     System.out.println(item);
 
                 });
+
+
+
+        sentenceRepository_es.deleteAll();
+        System.out.println("=============================end===========================================");
+        sentenceRepository_es.findAll(page).getContent().forEach(item ->{
+            System.out.println(item);
+        });
+
+
+    }
+
+
+    @Test
+    public void test001(){
 
     }
 

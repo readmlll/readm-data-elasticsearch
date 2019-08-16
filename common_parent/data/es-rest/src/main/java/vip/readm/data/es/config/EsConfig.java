@@ -26,14 +26,17 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.boot.context.event.ApplicationStartingEvent;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Conditional;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.event.ContextRefreshedEvent;
 import vip.readm.common.utils.ClassUtils;
 import vip.readm.data.es.EsJsonUtils;
 import vip.readm.data.es.EsRestClient;
 import vip.readm.data.es.properties.EsProperties;
+import vip.readm.data.es.repository.EsRepository;
 
 import javax.annotation.PostConstruct;
 import java.util.List;
@@ -52,15 +55,12 @@ import java.util.List;
 @Accessors(chain = true)
 @Configuration
 @EnableConfigurationProperties(EsProperties.class)//开启属性注入,通过@autowired注入
-public class EsConfig {
+public class EsConfig implements ApplicationContextAware , ApplicationListener<ContextRefreshedEvent> {
 
     static {
         System.out.println("EsConfig static init");
     }
 
-
-    @Autowired
-    ApplicationContext applicationContext;
 
     @Autowired
     DefaultListableBeanFactory beanFactory;
@@ -73,11 +73,17 @@ public class EsConfig {
     @Autowired
     EsProperties esProperties;
 
+    private ApplicationContext applicationContext;
+    public void setApplicationContext(ApplicationContext applicationContext)  {
+        this.applicationContext = applicationContext;
+    }
+
 
 
     public static RestHighLevelClient restHighLevelClient=null;
     public static RestClient restClient=null;
     public static RestClientBuilder builder=null;
+    public static EsJsonUtils esJsonUtils=null;
 
     @PostConstruct
     void init() {
@@ -128,44 +134,67 @@ public class EsConfig {
         return builder;
     }
 
-    @Bean
-    public RestHighLevelClient restHighLevelClient() throws Exception {
-        RestHighLevelClient restHighLevelClient=new RestHighLevelClient(getEsClientBuild());
-        EsConfig.restHighLevelClient=restHighLevelClient;
-        return restHighLevelClient;
+
+
+
+
+
+    public  static void defineBean(Class cl,DefaultListableBeanFactory beanFactory ) {
+        String name=cl.getSimpleName();
+        String cp=(""+name.charAt(0)).toLowerCase();
+        String beanName=cp+name.substring(1, name.length());
+        //AnnotatedGenericBeanDefinition annotatedGenericBeanDefinition=new AnnotatedGenericBeanDefinition(cl);
+        //beanFactory.registerBeanDefinition(beanName,annotatedGenericBeanDefinition);
+        try {
+            Object o =cl.newInstance();
+
+            if(o instanceof EsRepository){
+                EsRepository esRepository=(EsRepository) o;
+                esRepository.postConstruct();
+            }
+
+            beanFactory.destroySingleton(beanName);
+            beanFactory.clearMetadataCache();
+
+            beanFactory.registerSingleton(beanName, o);
+            beanFactory.autowireBean(o);
+            log.info("对象注册:"+name+" ,注册成功,bean名字:"+beanName);
+
+        }catch (Exception e){
+            log.info("对象注册:"+name+" ,注册失败,bean名字:"+beanName);
+            e.printStackTrace();
+        }
+
+    }
+    public  static void defineBean(Object o,DefaultListableBeanFactory beanFactory ){
+
+        Class cl=o.getClass();
+        String name=cl.getSimpleName();
+        String cp=(""+name.charAt(0)).toLowerCase();
+        String beanName=cp+name.substring(1, name.length());
+
+        //AnnotatedGenericBeanDefinition annotatedGenericBeanDefinition=new AnnotatedGenericBeanDefinition(cl);
+        //beanFactory.registerBeanDefinition(beanName,annotatedGenericBeanDefinition);
+        try {
+            if(o instanceof EsRepository){
+                EsRepository esRepository=(EsRepository) o;
+                esRepository.postConstruct();
+            }
+            beanFactory.destroySingleton(beanName);
+            beanFactory.clearMetadataCache();
+
+            beanFactory.registerSingleton(beanName, o);
+            beanFactory.autowireBean(o);
+            log.info("对象注册:"+name+" ,注册成功,bean名字:"+beanName);
+
+        }catch (Exception e){
+            log.info("对象注册:"+name+" ,注册失败,bean名字:"+beanName);
+            e.printStackTrace();
+        }
+
     }
 
-    @Bean
-    RestClient restClient(RestHighLevelClient restHighLevelClient){
-        RestClient restClient=restHighLevelClient.getLowLevelClient();
-        EsConfig.restClient=restClient;
-        return  restClient;
-    }
-
-    @Bean
-    @ConditionalOnBean({ObjectMapper.class})
-    EsJsonUtils esJsonUtils(){
-        EsJsonUtils esJsonUtils=new EsJsonUtils();
-        EsJsonUtils.objectMapper=objectMapper;
-        EsJsonUtils.EsIndex.objectMapper=objectMapper;
-        return esJsonUtils;
-    }
-
-    @PostConstruct
-    public void scanRepository(){
-
-        /**
-         *
-         * 扫描客户定义的仓库对象 根据仓库对象包名
-         *
-         * 注册关系
-         * 所有的 仓库对象继承EsRepository
-         * EsRepository继承于  基于RestClient和RestHighLevelClient的 自定义的EsRest客户端 封装前二者操作
-         *
-         * 于是：创建用户仓库时 创建了 EsRepository 创建了 EsRest
-         *
-         * EsRest内含有自动注入的属性 所以在 config对象中 PostConstruct注解标注
-         */
+    public Object scanRepository(){
 
         String repository_path = esProperties.repository_path;
         List<Class<?>> list= ClassUtils.getClasses(repository_path);
@@ -176,19 +205,58 @@ public class EsConfig {
                 e.printStackTrace();
             }
         });
+        return new Object();
+    }
+
+    @Override
+    public void onApplicationEvent(ContextRefreshedEvent contextRefreshedEvent) {
+
+
+
+        log.info("onApplicationEvent 注册仓库对象");
+
+        RestHighLevelClient restHighLevelClient=new RestHighLevelClient(getEsClientBuild());
+        EsConfig.restHighLevelClient=restHighLevelClient;
+        EsConfig.restClient=restHighLevelClient.getLowLevelClient();
+
+        EsJsonUtils esJsonUtils=new EsJsonUtils();
+        EsJsonUtils.objectMapper=objectMapper;
+        EsJsonUtils.EsIndex.objectMapper=objectMapper;
+
+        EsRestClient.restHighLevelClient=restHighLevelClient;
+        EsRestClient.restClient=restClient;
+        EsRestClient.esJsonUtils=esJsonUtils;
+        EsRestClient.objectMapper=objectMapper;
+        EsRestClient.esProperties=esProperties;
+
+
+        defineBean(restHighLevelClient,beanFactory);
+        defineBean(restClient,beanFactory);
+
+        /**
+         * 扫描客户定义的仓库对象 根据仓库对象包名
+         * 注册关系
+         * 所有的 仓库对象继承EsRepository
+         * EsRepository继承于  基于RestClient和RestHighLevelClient的 自定义的EsRest客户端 封装前二者操作
+         * 于是：创建用户仓库时 创建了 EsRepository 创建了 EsRest
+         * EsRest内含有 必须不为空的静态属性 所以在 config对象中注册
+         */
+        scanRepository();
 
     }
 
-    public  static void defineBean(Class cl,DefaultListableBeanFactory beanFactory){
-        String name=cl.getSimpleName();
-        String cp=(""+name.charAt(0)).toLowerCase();
-        String beanName=cp+name.substring(1, name.length());
 
-        AnnotatedGenericBeanDefinition annotatedGenericBeanDefinition=new AnnotatedGenericBeanDefinition(cl);
-        beanFactory.registerBeanDefinition(beanName,annotatedGenericBeanDefinition);
 
-        log.info("对象注册:"+name+" ,注册成功,bean名字:"+beanName);
+
+
+    @Bean
+    public RestHighLevelClient restHighLevelClient() throws Exception {
+        return restHighLevelClient;
     }
 
+    @Bean
+    RestClient restClient(){
+        return  EsConfig.restClient;
+    }
 
 }

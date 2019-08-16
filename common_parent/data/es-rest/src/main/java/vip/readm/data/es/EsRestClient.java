@@ -67,20 +67,16 @@ public class EsRestClient {
      * 封装 RestHighLevelClient RestClient 的操作
      */
 
-    @Autowired
-    RestHighLevelClient restHighLevelClient;
 
-    @Autowired
-    RestClient restClient;
+    public static   RestHighLevelClient restHighLevelClient;
 
-    @Autowired
-    EsJsonUtils esJsonUtils;
+    public static RestClient restClient;
 
-    @Autowired
-    ObjectMapper objectMapper;
+    public static EsJsonUtils esJsonUtils;
 
-    @Autowired
-    EsProperties esProperties;
+    public static ObjectMapper objectMapper;
+
+    public static EsProperties esProperties;
 
     Log log= LogFactory.getLog(EsRestClient.class);
 
@@ -570,8 +566,8 @@ public class EsRestClient {
 
         while (true){
             try {
-                json=OriginRequest(HttpMethod.POST,esIndex.indexName+"/_delete_by_query",null,json);
-                Map map=objectMapper.readValue(json, Map.class);
+                String rjson=OriginRequest(HttpMethod.POST,esIndex.indexName+"/_delete_by_query?refresh&slices=5&pretty",null,json);
+                Map map=objectMapper.readValue(rjson, Map.class);
                 Object o=map.get("deleted");
                 if( o instanceof Integer){
                     successCount+=(Integer) o;
@@ -582,6 +578,7 @@ public class EsRestClient {
                // e.printStackTrace();
                 count++;
                 if(count<10){
+                    refreshDocument(cl);
                     continue;
                 }else{
                     break;
@@ -590,9 +587,9 @@ public class EsRestClient {
             }
             break;
         }
-
-        log.info("删除全部文档:"+esIndex.indexName+"/"+esIndex.indexType+" ,成功次数:"+successCount+" ,重试次数:"+count);
         refreshDocument(cl);
+        log.info("删除全部文档:"+esIndex.indexName+"/"+esIndex.indexType+" ,成功次数:"+successCount+" ,重试次数:"+count);
+
 
         return successCount;
     }

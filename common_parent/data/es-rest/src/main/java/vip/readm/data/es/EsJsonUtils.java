@@ -49,7 +49,7 @@ public class EsJsonUtils {
             Map typeObj=new HashMap<>();
             Map propertiesObj=new HashMap<>();
 
-            typeObj.put("vip/readm/data/es/properties", propertiesObj);
+            typeObj.put("properties", propertiesObj);
 
 
             fields.forEach(field->{

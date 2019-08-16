@@ -22,7 +22,7 @@ import vip.readm.data.es.pojo.EsEntity;
 @AllArgsConstructor
 @NoArgsConstructor
 //@Document(indexName = "idx_paper", type = "sentence")
-@Document(indexName = "idx_test_paper_test_002", type = "sentence")
+@Document(indexName = "idx_test_paper_test_003", type = "sentence")
 public class SentenceEntity_ES  extends EsEntity {
 
     @Id

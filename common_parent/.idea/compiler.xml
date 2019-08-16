@@ -8,7 +8,6 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="common" />
-        <module name="data-es-rest" />
         <module name="es-rest" />
       </profile>
     </annotationProcessing>
@@ -21,7 +20,6 @@
       <module name="common" options="-parameters" />
       <module name="common_parent" options="-parameters" />
       <module name="data" options="-parameters" />
-      <module name="data-es-rest" options="-parameters" />
       <module name="es-rest" options="-parameters" />
     </option>
   </component>

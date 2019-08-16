@@ -1,0 +1,12 @@
+readm:
+  data:
+    es:
+      enableLogin: false
+      dataCenterId: 1
+      machineId: 1
+      username: elastic
+      passwd: 123456
+      host: 127.0.0.1
+      port: 8888
+      number_of_shards: 3
+      number_of_replicas: 3

@@ -18,6 +18,7 @@ import java.util.List;
 
 
 @NoArgsConstructor
+@Component
 public class SentenceRepository_ES extends EsRepository<SentenceEntity_ES,String> {
 
 

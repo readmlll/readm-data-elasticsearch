@@ -20,7 +20,6 @@ import org.springframework.stereotype.Component;
 @EqualsAndHashCode
 @ToString
 @Accessors(chain = true)
-@ConditionalOnMissingBean(name = "esProperties")
 @Component
 @ConfigurationProperties(prefix = "readm.data.es")
 public class EsProperties {

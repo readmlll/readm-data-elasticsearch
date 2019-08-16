@@ -11,6 +11,7 @@ import org.springframework.data.domain.Sort;
 import org.springframework.data.elasticsearch.core.query.SearchQuery;
 import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;
 import vip.readm.data.es.EsRestClient;
+import vip.readm.data.es.config.EsConfig;
 import vip.readm.data.es.pojo.EsEntity;
 import vip.readm.data.es.pojo.impl.Page;
 
@@ -36,8 +37,11 @@ public class EsRepository<T extends EsEntity, ID extends Serializable> extends E
     private Class<ID> IdCl;
 
     @PostConstruct
-    public void postConstruct(){
-        if(cl!=null ){
+    public void
+
+    postConstruct(){
+
+        if(cl!=null && EsConfig.restHighLevelClient!=null){
             createDocument(1*10000*10000L);
         }
     }

@@ -3,7 +3,7 @@
 
 
 
-### （实测阿里云es 6.7.0没问题，注意开启公网访问，用户名密码，以及设置好白名单）
+### （实测阿里云es 6.7.0没问题，注意开启公网访问，用户名密码，以及设置好白名单，实际上高低版本的client支持6.x-7.x。 7.x以上取消type的概念，重写构造不同高低版本client代码即可兼容大部分es版本）
 
 #### 基于spring boot,(spring-data-es部分注解)、elasticsearch高低版本client
 
@@ -11,6 +11,13 @@
 
 ## 单独依赖版本，spring boot自动配置，使用方引入只需定义好文档类，自动创建es文档，定义好仓库类开箱即用常用操作，自动配置
 ## 实现全部ElasticsearchRepository接口
+
+
+
+## 更新8.16 :
+
+#### 修复已知问题, 定义仓库对象时 除了继承EsRestClient外，因为没用动态代理方式，所以请加@Component 注解
+
 
 
 ###### 优点:
@@ -97,3 +104,421 @@ paper_site为 使用本框架示例
 
 
 ![U0XXWZV6$G@{MBYH2~$WH14](https://github.com/readmlll/readm-data-elasticsearch/blob/master/assets/test.png)
+
+
+
+
+
+
+
+
+
+
+
+例子
+
+ 仓库对象定义例子
+
+```java
+package readm.paper.es.repository;
+
+import lombok.NoArgsConstructor;
+import org.elasticsearch.client.RestHighLevelClient;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import readm.paper.es.pojo.SentenceEntity_ES;
+import vip.readm.data.es.repository.EsRepository;
+
+import javax.annotation.PostConstruct;
+import java.util.List;
+
+/**
+ * @Author: Readm
+ * @Date: 2019/8/14 4:29
+ * @Version 1.0
+ */
+
+
+@NoArgsConstructor
+@Component
+public class SentenceRepository_ES extends EsRepository<SentenceEntity_ES,String> {
+
+
+
+}
+```
+
+文档实体声明
+
+```java
+package readm.paper.es.pojo;
+
+import lombok.*;
+import lombok.experimental.Accessors;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.elasticsearch.annotations.Document;
+import org.springframework.data.elasticsearch.annotations.Field;
+import org.springframework.data.elasticsearch.annotations.FieldType;
+import vip.readm.data.es.pojo.EsEntity;
+
+/**
+ * @Author: Readm
+ * @Date: 2019/8/14 4:29
+ * @Version 1.0
+ */
+
+
+@Data
+@Accessors(chain = true)
+@EqualsAndHashCode
+@ToString
+@AllArgsConstructor
+@NoArgsConstructor
+//@Document(indexName = "idx_paper", type = "sentence")
+@Document(indexName = "idx_test_paper_test_003", type = "sentence")
+public class SentenceEntity_ES  extends EsEntity {
+
+    @Id
+    @Field(type = FieldType.Keyword,index = true,store = true)
+    private String id;
+
+    //用于按id排序
+    @Field(type = FieldType.Integer,index = true,store = false)
+    private Integer orderId;
+
+
+    public SentenceEntity_ES setId(String id){
+        this.id=id;
+        try {
+            orderId=Integer.parseInt(id);
+        }catch (Exception e){
+        }
+        return this;
+    }
+
+    //原句需要分词 用于搜索
+    @Field(type = FieldType.Text,index = true,store = true,searchAnalyzer="standard",analyzer="standard")
+    private String text;
+
+    public SentenceEntity_ES setText(String text){
+
+        this.text=text;
+        this.setFullText(text);
+
+        return this;
+    }
+
+    //原句不分词版
+    @Field(type = FieldType.Keyword,index = true,store = false)
+    private String fullText;
+
+
+
+    //翻译后的中文句子
+    @Field(type = FieldType.Text,index = true,store = true,searchAnalyzer="ik_smart",analyzer="ik_max_word")
+    private String translateText;
+
+    public SentenceEntity_ES setTranslateText(String translateText){
+
+        this.translateText=translateText;
+        this.fullTranslateText=translateText;
+
+        return this;
+    }
+
+
+
+    //翻译后的中文句子 不分词版本
+    @Field(type = FieldType.Keyword,index = true,store = false)
+    private String fullTranslateText;
+
+
+    //文章来源 目前没有用于搜索 ，但是还是建立下索引以防万一
+    @Field(type = FieldType.Keyword,index = true,store = true)
+    private String articleUrl;
+
+
+    //图片链接 目前没有用于搜索 ，但是还是建立下索引以防万一
+    @Field(type = FieldType.Keyword,index = true,store = true)
+    private  String imgUrl;
+
+
+    //句子模块类型 需要被搜索 但是不分词
+    @Field(type = FieldType.Keyword,index = true,store = true)
+    private  String type;
+
+
+    //原句md5
+    @Field(type = FieldType.Keyword,index = true,store = false)
+    private String textMd5;
+
+
+
+
+
+}
+```
+
+
+
+编写业务代码使用仓库对象
+
+```java
+package readm.paper.controller;
+
+import org.elasticsearch.index.query.MultiMatchQueryBuilder;
+import org.elasticsearch.index.query.QueryBuilders;
+import org.elasticsearch.index.query.TermQueryBuilder;
+import org.elasticsearch.search.fetch.subphase.highlight.HighlightBuilder;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
+import org.springframework.web.bind.annotation.*;
+import readm.paper.es.pojo.SentenceEntity_ES;
+import readm.paper.es.repository.SentenceRepository_ES;
+import vip.readm.data.es.pojo.impl.Page;
+import vip.readm.data.es.repository.EsRepository;
+
+/**
+ * @Author: Readm
+ * @Date: 2019/8/16 16:25
+ * @Version 1.0
+ */
+
+@RestController
+public class TestController {
+
+
+
+    @Autowired
+    SentenceRepository_ES sentenceRepository_es;
+
+    @GetMapping("/test")
+    public Object testGet(
+           @RequestParam(required = false) String q
+    ){
+
+
+
+        MultiMatchQueryBuilder multiMatchQueryBuilder=QueryBuilders.multiMatchQuery("测试修改", "translateText","fullTranslateText");
+        Sort sort= Sort.by(Sort.Direction.ASC,"orderId");
+        Page<SentenceEntity_ES> page=new Page<>(0,10,sort);
+
+        HighlightBuilder highlightBuilder=null;
+        highlightBuilder= EsRepository.getHighlightBuilderFromFieldNames("translateText","fullTranslateText");
+        sentenceRepository_es.search(multiMatchQueryBuilder, null, page, highlightBuilder).getContent()
+                .forEach(item->{
+
+                    System.out.println(item);
+
+                });
+
+        return "GetMapping q="+q;
+    }
+
+
+    @PostMapping("/test")
+    public Object testPost(
+            @RequestParam(required = false) String q
+    ){
+
+        return "PostMapping q="+q;
+    }
+
+
+    @PutMapping("/test")
+    public Object testPut(
+            @RequestParam(required = false) String q
+    ){
+
+        return "PutMapping q="+q;
+    }
+
+
+    @DeleteMapping("/test")
+    public Object testDelete(
+            @RequestParam(required = false) String q
+    ){
+
+        return "DeleteMapping q="+q;
+    }
+
+
+}
+```
+
+
+
+
+
+仓库对象使用2：
+
+```
+package readm.paper;
+
+import org.elasticsearch.action.search.SearchRequest;
+import org.elasticsearch.client.RestClient;
+import org.elasticsearch.client.RestHighLevelClient;
+import org.elasticsearch.index.query.MultiMatchQueryBuilder;
+import org.elasticsearch.index.query.QueryBuilders;
+import org.elasticsearch.index.query.TermQueryBuilder;
+import org.elasticsearch.index.reindex.UpdateByQueryRequest;
+import org.elasticsearch.search.builder.SearchSourceBuilder;
+import org.elasticsearch.search.fetch.subphase.highlight.HighlightBuilder;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.boot.autoconfigure.admin.SpringApplicationAdminJmxAutoConfiguration;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.data.domain.Sort;
+import org.springframework.test.context.junit4.SpringRunner;
+import readm.paper.es.pojo.SentenceEntity_ES;
+import readm.paper.es.repository.SentenceRepository_ES;
+import vip.readm.data.es.EsRestClient;
+import vip.readm.data.es.config.EsConfig;
+import vip.readm.data.es.pojo.impl.Page;
+import vip.readm.data.es.repository.EsRepository;
+
+import java.util.ArrayList;
+import java.util.List;
+
+@RunWith(SpringRunner.class)
+@SpringBootTest
+public class PaperApplicationTests {
+
+    @Autowired
+    RestHighLevelClient restHighLevelClient;
+
+    @Autowired
+    RestClient restClient;
+
+    @Autowired
+    SentenceRepository_ES sentenceRepository_es;
+
+
+
+
+    @Test
+    public void us(){
+
+    }
+
+
+
+    @Test
+    public void contextLoads() {
+
+
+        System.out.println(restHighLevelClient);
+
+        List<SentenceEntity_ES> sentencs=new ArrayList<>();
+
+        for(int i=0;i<3;i++){
+
+            SentenceEntity_ES sentenceEntity_es=new SentenceEntity_ES().setText(i+"test").setTranslateText("测试修改").setArticleUrl("www.baiar.com").setImgUrl("imgurl")
+                    .setType("head").setTextMd5("5556");
+
+            sentencs.add(sentenceEntity_es);
+        }
+
+        Boolean bRes=false;
+        Integer nRes=0;
+        sentencs.get(0).setId("5");
+        sentencs.get(1).setId("8");
+        sentencs.get(2).setId("10");
+
+        sentenceRepository_es.saveAll(sentencs);
+        //bRes=sentenceRepository_es
+       // nRes=sentenceRepository_es.deleteAll(sentencs);
+        //System.out.println(sentenceRepository_es.deleteAll());
+
+      //  System.out.println(res);
+
+        System.out.println("当前总数："+sentenceRepository_es.count());
+        TermQueryBuilder termQueryBuilder= QueryBuilders.termQuery("translateText", "测试");
+
+        MultiMatchQueryBuilder multiMatchQueryBuilder=QueryBuilders.multiMatchQuery("测试修改", "translateText","fullTranslateText");
+
+        Sort sort= Sort.by(Sort.Direction.ASC,"orderId");
+        Page<SentenceEntity_ES> page=new Page<>(0,10,sort);
+
+        sentenceRepository_es.findAll(page).getContent().forEach(item ->{
+            System.out.println(item);
+        });
+
+
+        sentenceRepository_es.deleteAll();
+
+
+        sentenceRepository_es.findAll(page).getContent().forEach(item ->{
+            System.out.println(item);
+        });
+
+
+
+
+        sentenceRepository_es.saveAll(sentencs);
+        // 高亮设置
+
+            HighlightBuilder.Field highlightField = new HighlightBuilder.Field("translateText");
+            highlightField.highlighterType("unified");
+
+            HighlightBuilder.Field highlightField2 = new HighlightBuilder.Field("fullTranslateText");
+            highlightField2.highlighterType("unified");
+
+            HighlightBuilder highlightBuilder = new HighlightBuilder();
+            HighlightBuilder.Field highlightUser = new HighlightBuilder.Field("user");
+            highlightBuilder.field(highlightField);
+            highlightBuilder.field(highlightUser);
+
+            highlightBuilder.field(highlightField2);
+
+
+
+
+
+        System.out.println();
+        System.out.println();
+        System.out.println("=============================highlightBuilder===========================================");
+
+
+        sentenceRepository_es.search(multiMatchQueryBuilder, null, page, highlightBuilder).getContent()
+        .forEach(item->{
+
+            System.out.println(item);
+
+        });
+
+        System.out.println();
+        System.out.println();
+        System.out.println("=============================highlightBuilder  utils===========================================");
+
+        highlightBuilder=null;
+        highlightBuilder= EsRepository.getHighlightBuilderFromFieldNames("translateText","fullTranslateText");
+        sentenceRepository_es.search(multiMatchQueryBuilder, null, page, highlightBuilder).getContent()
+                .forEach(item->{
+
+                    System.out.println(item);
+
+                });
+
+
+
+        sentenceRepository_es.deleteAll();
+        System.out.println("=============================end===========================================");
+        sentenceRepository_es.findAll(page).getContent().forEach(item ->{
+            System.out.println(item);
+        });
+
+
+    }
+
+
+    @Test
+    public void test001(){
+
+    }
+
+}
+```
+

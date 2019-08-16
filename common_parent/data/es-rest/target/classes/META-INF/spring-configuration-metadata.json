@@ -1,0 +1,72 @@
+{
+  "groups": [
+    {
+      "name": "readm.data.es",
+      "type": "vip.readm.data.es.properties.EsProperties",
+      "sourceType": "vip.readm.data.es.properties.EsProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "readm.data.es.common-time-out",
+      "type": "java.lang.Integer",
+      "sourceType": "vip.readm.data.es.properties.EsProperties"
+    },
+    {
+      "name": "readm.data.es.data-center-id",
+      "type": "java.lang.Long",
+      "sourceType": "vip.readm.data.es.properties.EsProperties",
+      "defaultValue": 1
+    },
+    {
+      "name": "readm.data.es.enable-login",
+      "type": "java.lang.Boolean",
+      "sourceType": "vip.readm.data.es.properties.EsProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "readm.data.es.host",
+      "type": "java.lang.String",
+      "sourceType": "vip.readm.data.es.properties.EsProperties"
+    },
+    {
+      "name": "readm.data.es.machine-id",
+      "type": "java.lang.Long",
+      "sourceType": "vip.readm.data.es.properties.EsProperties",
+      "defaultValue": 1
+    },
+    {
+      "name": "readm.data.es.number-of-replicas",
+      "type": "java.lang.Integer",
+      "sourceType": "vip.readm.data.es.properties.EsProperties",
+      "defaultValue": 3
+    },
+    {
+      "name": "readm.data.es.number-of-shards",
+      "type": "java.lang.Integer",
+      "sourceType": "vip.readm.data.es.properties.EsProperties",
+      "defaultValue": 3
+    },
+    {
+      "name": "readm.data.es.passwd",
+      "type": "java.lang.String",
+      "sourceType": "vip.readm.data.es.properties.EsProperties"
+    },
+    {
+      "name": "readm.data.es.port",
+      "type": "java.lang.Integer",
+      "sourceType": "vip.readm.data.es.properties.EsProperties"
+    },
+    {
+      "name": "readm.data.es.repository-path",
+      "type": "java.lang.String",
+      "sourceType": "vip.readm.data.es.properties.EsProperties"
+    },
+    {
+      "name": "readm.data.es.username",
+      "type": "java.lang.String",
+      "sourceType": "vip.readm.data.es.properties.EsProperties"
+    }
+  ],
+  "hints": []
+}
