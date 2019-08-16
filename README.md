@@ -171,7 +171,7 @@ paper_site为 使用本框架示例
 
 
 
-![U0XXWZV6$G@{MBYH2~$WH14](C:\Users\Readm\Desktop\readm-data-elasticsearch\readm-data-elasticsearch\assets\U0XXWZV6$G@{MBYH2~$WH14.png)
+![U0XXWZV6$G@{MBYH2~$WH14](https://github.com/readmlll/readm-data-elasticsearch/blob/master/assets/U0XXWZV6%24G%40%7BMBYH2~%24WH14.png)
 
 
 
@@ -179,7 +179,7 @@ paper_site为 使用本框架示例
 
 
 
-![U0XXWZV6$G@{MBYH2~$WH14](C:\Users\Readm\Desktop\readm-data-elasticsearch\readm-data-elasticsearch\assets\D3[KBZ39E37NWRC6XMK5MX6.png)
+![U0XXWZV6$G@{MBYH2~$WH14](https://github.com/readmlll/readm-data-elasticsearch/blob/master/assets/D3%5BKBZ39E37NWRC6XMK5MX6.png)
 
 
 
@@ -189,4 +189,4 @@ paper_site为 使用本框架示例
 
 
 
-![U0XXWZV6$G@{MBYH2~$WH14](C:\Users\Readm\Desktop\readm-data-elasticsearch\readm-data-elasticsearch\assets\test.png)
+![U0XXWZV6$G@{MBYH2~$WH14](https://github.com/readmlll/readm-data-elasticsearch/blob/master/assets/test.png)
