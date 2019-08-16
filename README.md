@@ -44,26 +44,7 @@
 
 本框架主要类目录结构 (详细目录结构在下方)
 
-│  EsJsonUtils.java   (解析spring-data-es 部分常用注解 文档声明，字段定义等)
-│  EsRestClient.java  (封装 elasticsearch官方高低版Client相关常用操作)
-│
-├─config
-│      EsConfig.java   (主要配置类)
-│      LocalDateTimeConfig.java
-│
-├─event
-├─pojo
-│  │  EsEntity.java   (所有实体对象请继承于它，id字段必须为string 类型，如想更多请自行修改)
-│  │
-│  └─impl
-│          Page.java (封装分页请求 和 分页返回数据对象)
-│
-├─properties
-│      EsProperties.java (抽取到yml的属性配置类)
-│
-└─repository
-        EsRepository.java  (实现ElasticsearchRepository接口， 使用时需要 你的仓库类需要继承于它， 这点和spring-data常用接口不同，我才用了继承类的方式)
-
+![U0XXWZV6$G@{MBYH2~$WH14](https://github.com/readmlll/readm-data-elasticsearch/blob/master/assets/dir1.png)
 
 
 
@@ -85,84 +66,8 @@ paper_site为 使用本框架示例
 
 
 
-├─common_parent
-│  ├─.idea
-│  ├─common
-│  │  └─src
-│  │      ├─main
-│  │      │  ├─java
-│  │      │  │  └─vip
-│  │      │  │      └─readm
-│  │      │  │          └─common
-│  │      │  │              ├─dto
-│  │      │  │              ├─exception
-│  │      │  │              └─utils
-│  │      │  └─resources
-│  │      └─test
-│  │          └─java
-│  ├─data
-│  │  ├─es-rest
-│  │  │  └─src
-│  │  │      ├─main
-│  │  │      │  ├─java
-│  │  │      │  │  └─vip
-│  │  │      │  │      └─readm
-│  │  │      │  │          └─data
-│  │  │      │  │              └─es
-│  │  │      │  │                  ├─config
-│  │  │      │  │                  ├─event
-│  │  │      │  │                  ├─pojo
-│  │  │      │  │                  │  └─impl
-│  │  │      │  │                  ├─properties
-│  │  │      │  │                  └─repository
-│  │  │      │  └─resources
-│  │  │      │      └─META-INF
-│  │  │      └─test
-│  │  │          └─java
-│  │  └─src
-│  │      ├─main
-│  │      │  ├─java
-│  │      │  └─resources
-│  │      └─test
-│  │          └─java
-│  └─src
-│      ├─main
-│      │  ├─java
-│      │  │  └─vip
-│      │  │      └─readm
-│      │  └─resources
-│      └─test
-│          └─java
-└─paper_site
-    ├─.idea
-    │  └─libraries
-    ├─.mvn
-    │  └─wrapper
-    └─src
-        ├─main
-        │  ├─java
-        │  │  └─readm
-        │  │      └─paper
-        │  │          ├─config
-        │  │          ├─controller
-        │  │          │  └─advice
-        │  │          ├─entity
-        │  │          ├─es
-        │  │          │  ├─pojo
-        │  │          │  └─repository
-        │  │          ├─properties
-        │  │          ├─redis
-        │  │          └─repository
-        │  └─resources
-        │      ├─static
-        │      └─templates
-        └─test
-            └─java
-                ├─readm
-                │  └─paper
-                └─vip
-                    └─readm
-
+![U0XXWZV6$G@{MBYH2~$WH14](https://github.com/readmlll/readm-data-elasticsearch/blob/master/assets/dir2.png)
+![U0XXWZV6$G@{MBYH2~$WH14](https://github.com/readmlll/readm-data-elasticsearch/blob/master/assets/dir3.png)
 
 
 
