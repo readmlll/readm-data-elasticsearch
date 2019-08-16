@@ -1,0 +1,14 @@
+spring:
+  profiles:
+    active: local
+
+
+readm:
+  main:
+    debug: true
+  data:
+    es:
+      enableLogin: false
+      repository_path: readm.paper.es.repository
+      dataCenterId: 1
+      machineId: 1

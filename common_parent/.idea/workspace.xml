@@ -1,0 +1,1570 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutomaticModuleUnloader">
+    <loaded-modules>
+      <module name="common" />
+      <module name="data" />
+    </loaded-modules>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="eded949c-53b9-4314-93f8-7d800c805b7d" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/data/target/" />
+    <ignored path="$PROJECT_DIR$/data/es-rest/target/" />
+    <ignored path="$PROJECT_DIR$/common/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>readm</find>
+      <find>updateb</find>
+      <find>缓存</find>
+      <find>searchDocument</find>
+      <find>sourceBuilder</find>
+      <find>, HighlightBuilder highlightBuilder</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/data/es-rest/src/main/java/utils/SnowFlake.java" />
+        <option value="$PROJECT_DIR$/data/src/main/java/vip/readm/common/utils/ClassUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/SnowFlake.java" />
+        <option value="$PROJECT_DIR$/src/main/java/vip/readm/common/utils/SnowFlake.java" />
+        <option value="$PROJECT_DIR$/src/main/java/vip/readm/common/utils/RestResultUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/vip/readm/common/exception/CommonControllerException.java" />
+        <option value="$PROJECT_DIR$/data/es-rest/src/main/java/pojo/EsEntity.java" />
+        <option value="$PROJECT_DIR$/data/es-rest/src/main/java/EsJsonUtils.java" />
+        <option value="$PROJECT_DIR$/data/es-rest/src/main/java/EsRestClient.java" />
+        <option value="$PROJECT_DIR$/data/es-rest/src/main/java/config/EsConfig.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/vip/readm/common/utils/StreamUtils.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/common/pom.xml" />
+        <option value="$PROJECT_DIR$/data/pom.xml" />
+        <option value="$PROJECT_DIR$/data/es-rest/src/main/java/vip/readm/data/es/event/SpringBootEvent.java" />
+        <option value="$PROJECT_DIR$/data/es-rest/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/data/es-rest/src/main/java/vip/readm/data/es/properties/EsProperties.java" />
+        <option value="$PROJECT_DIR$/data/es-rest/src/main/java/vip/readm/data/es/EsJsonUtils.java" />
+        <option value="$PROJECT_DIR$/data/es-rest/src/main/resources/META-INF/spring.factories" />
+        <option value="$PROJECT_DIR$/data/es-rest/src/main/java/vip/readm/data/es/config/EsConfig.java" />
+        <option value="$PROJECT_DIR$/data/es-rest/target/classes/application.yml" />
+        <option value="$PROJECT_DIR$/data/es-rest/pom.xml" />
+        <option value="$PROJECT_DIR$/common/src/main/java/vip/readm/common/utils/ClassUtils.java" />
+        <option value="$PROJECT_DIR$/data/es-rest/src/main/java/vip/readm/data/es/EsRestClient.java" />
+        <option value="$PROJECT_DIR$/data/es-rest/src/main/java/vip/readm/data/es/repository/EsRepository.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\develop\environment\maven\repository" />
+        <option name="mavenHome" value="D:/develop/environment/maven" />
+        <option name="userSettingsFile" value="D:\develop\environment\maven\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="common-parent" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="common-parent" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="307" />
+    <option name="y" value="135" />
+    <option name="width" value="1583" />
+    <option name="height" value="807" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="common_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="common_parent" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="common_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="common_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="common_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="common_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="es-rest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="common_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="common_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="es-rest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="common_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="common_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="es-rest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="common_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="common_parent" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="es-rest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565910155122" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="vip.readm.common" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\develop\code\javaee\common_parent\data\es-rest\src\main\resources" />
+      <recent name="D:\develop\code\javaee\common\data\es-rest\src\main\java" />
+      <recent name="D:\develop\code\javaee\common\src\main\java\vip\readm\common" />
+      <recent name="D:\develop\code\javaee\common\src\main\java" />
+      <recent name="D:\develop\code\javaee\common\data\src\main\java\vip\readm\common" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\develop\code\javaee\common" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="eded949c-53b9-4314-93f8-7d800c805b7d" name="Default Changelist" comment="" />
+      <created>1565885157099</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1565885157099</updated>
+      <workItem from="1565885161031" duration="1562000" />
+      <workItem from="1565886891428" duration="1349000" />
+      <workItem from="1565888286174" duration="374000" />
+      <workItem from="1565888767054" duration="18444000" />
+      <workItem from="1565910675751" duration="45000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="21774000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="307" y="135" width="1583" height="807" extended-state="0" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20420223" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Learn" order="7" weight="0.32995737" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3827893" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.25607353" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/data/es-rest/src/main/java/utils/SnowFlake.java" />
+    <entry file="file://$PROJECT_DIR$/data/src/main/java/vip/readm/common/common/utils/StreamUtils.java" />
+    <entry file="file://$PROJECT_DIR$/data/src/main/java/vip/readm/common/common/dto/StringPtr.java" />
+    <entry file="file://$PROJECT_DIR$/data/src/main/java/vip/readm/common/common/exception/CommonDatabaseException.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/StreamUtils.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/dto/RestResult.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/ClassUtils.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/exception/CommonControllerException.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/RestResultUtils.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/dto/StringPtr.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/dto/CommonDtoWarp.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/exception/CommonDatabaseException.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/SnowFlake.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/top/readm/common/1.0-SNAPSHOT/common-1.0-SNAPSHOT.jar!/top/readm/common/utils/SnowFlake.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/es-rest/es_rest.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/vip/readm/common/exception/CommonDatabaseException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/vip/readm/common/utils/SnowFlake.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/vip/readm/common/utils/StreamUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-308">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/vip/readm/common/dto/CommonDtoWarp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/vip/readm/common/dto/RestResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/vip/readm/common/dto/StringPtr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/vip/readm/common/utils/RestResultUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/vip/readm/common/exception/CommonControllerException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="5" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/es-rest/src/main/java/vip/readm/data/es/event/SpringBootEvent.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.9.RELEASE/spring-context-5.1.9.RELEASE.jar!/org/springframework/context/annotation/Configuration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/es-rest/src/main/resources/application.yml" />
+    <entry file="file://$PROJECT_DIR$/data/es-rest/src/main/resources/META-INF/spring.factories">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.9.RELEASE/spring-context-5.1.9.RELEASE.jar!/org/springframework/context/annotation/Conditional.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="16" column="29" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.1.7.RELEASE/spring-boot-autoconfigure-2.1.7.RELEASE.jar!/org/springframework/boot/autoconfigure/condition/ConditionalOnBean.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="20" column="20" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/6.4.3/elasticsearch-6.4.3-sources.jar!/org/elasticsearch/client/ElasticsearchClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/6.4.3/elasticsearch-6.4.3-sources.jar!/org/elasticsearch/index/reindex/UpdateByQueryAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="34" column="68" lean-forward="true" selection-start-line="34" selection-start-column="57" selection-end-line="34" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/client/elasticsearch-rest-high-level-client/6.6.0/elasticsearch-rest-high-level-client-6.6.0-sources.jar!/org/elasticsearch/client/RestHighLevelClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21696">
+          <caret line="1300" selection-start-line="1300" selection-end-line="1300" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#18765#18766#0" expanded="true" />
+            <element signature="e#18794#18795#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/es-rest/target/classes/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/org/elasticsearch/client/elasticsearch-rest-high-level-client/6.7.0/elasticsearch-rest-high-level-client-6.7.0.pom">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://MAVEN/vip.readm:data-es-rest:1.0-SNAPSHOT">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>MAVEN</ID>
+          <OriginalElement>vip.readm:data-es-rest:1.0-SNAPSHOT</OriginalElement>
+          <nodes>
+            <node x="1675.75" y="1039.0">vip.readm:data-es-rest:1.0-SNAPSHOT</node>
+            <node x="1779.991221543438" y="918.0">org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE</node>
+            <node x="978.3610314849598" y="817.0">org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.7.RELEASE</node>
+            <node x="1136.6653307748525" y="706.0">org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.7.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.1.7.RELEASE</node>
+            <node x="1243.625" y="595.0">org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.7.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.1.7.RELEASE/ch.qos.logback:logback-classic:jar:1.2.3</node>
+            <node x="1376.5" y="384.0">org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.7.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.1.7.RELEASE/ch.qos.logback:logback-classic:jar:1.2.3/ch.qos.logback:logback-core:jar:1.2.3</node>
+            <node x="1586.1750000000002" y="595.0">org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.7.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.1.7.RELEASE/org.apache.logging.log4j:log4j-to-slf4j:jar:2.11.2</node>
+            <node x="1384.625" y="595.0">org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.7.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.1.7.RELEASE/org.slf4j:jul-to-slf4j:jar:1.7.26</node>
+            <node x="797.75" y="706.0">org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.7.RELEASE/javax.annotation:javax.annotation-api:jar:1.3.2</node>
+            <node x="3351.220965956559" y="273.0">org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.7.RELEASE/org.yaml:snakeyaml:jar:1.23</node>
+            <node x="2816.875" y="817.0">org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE</node>
+            <node x="1240.5" y="384.0">org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.springframework:spring-context:jar:5.1.9.RELEASE</node>
+            <node x="1279.5" y="273.0">org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.springframework:spring-context:jar:5.1.9.RELEASE/org.springframework:spring-aop:jar:5.1.9.RELEASE</node>
+            <node x="1121.5" y="192.0">org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.springframework:spring-context:jar:5.1.9.RELEASE/org.springframework:spring-expression:jar:5.1.9.RELEASE</node>
+            <node x="3622.674109231414" y="273.0">org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.springframework:spring-tx:jar:5.1.9.RELEASE</node>
+            <node x="1735.625" y="595.0">org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.springframework.data:spring-data-commons:jar:2.1.10.RELEASE</node>
+            <node x="3117.8193648182933" y="384.0">org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/joda-time:joda-time:jar:2.10.3</node>
+            <node x="3224.855079104007" y="706.0">org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.elasticsearch.client:transport:jar:6.4.3</node>
+            <node x="2911.415330774852" y="595.0">org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.elasticsearch.client:transport:jar:6.4.3/org.elasticsearch.plugin:reindex-client:jar:6.4.3</node>
+            <node x="2792.125" y="384.0">org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.elasticsearch.client:transport:jar:6.4.3/org.elasticsearch.plugin:reindex-client:jar:6.4.3/org.elasticsearch.client:elasticsearch-rest-client:jar:6.4.3</node>
+            <node x="3182.415330774852" y="595.0">org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.elasticsearch.client:transport:jar:6.4.3/org.elasticsearch.plugin:lang-mustache-client:jar:6.4.3</node>
+            <node x="3505.415330774852" y="595.0">org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.elasticsearch.client:transport:jar:6.4.3/org.elasticsearch.plugin:percolator-client:jar:6.4.3</node>
+            <node x="3354.415330774852" y="595.0">org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.elasticsearch.client:transport:jar:6.4.3/org.elasticsearch.plugin:parent-join-client:jar:6.4.3</node>
+            <node x="3041.415330774852" y="595.0">org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.elasticsearch.client:transport:jar:6.4.3/org.elasticsearch.plugin:rank-eval-client:jar:6.4.3</node>
+            <node x="2181.3193648182933" y="595.0">org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.elasticsearch.plugin:transport-netty4-client:jar:6.4.3</node>
+            <node x="2173.125" y="384.0">org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.elasticsearch.plugin:transport-netty4-client:jar:6.4.3/io.netty:netty-buffer:jar:4.1.38.Final</node>
+            <node x="2568.125" y="384.0">org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.elasticsearch.plugin:transport-netty4-client:jar:6.4.3/io.netty:netty-codec:jar:4.1.38.Final</node>
+            <node x="1892.125" y="384.0">org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.elasticsearch.plugin:transport-netty4-client:jar:6.4.3/io.netty:netty-codec-http:jar:4.1.38.Final</node>
+            <node x="2293.125" y="384.0">org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.elasticsearch.plugin:transport-netty4-client:jar:6.4.3/io.netty:netty-common:jar:4.1.38.Final</node>
+            <node x="2004.875" y="273.0">org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.elasticsearch.plugin:transport-netty4-client:jar:6.4.3/io.netty:netty-handler:jar:4.1.38.Final</node>
+            <node x="2040.125" y="384.0">org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.elasticsearch.plugin:transport-netty4-client:jar:6.4.3/io.netty:netty-resolver:jar:4.1.38.Final</node>
+            <node x="2429.125" y="384.0">org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.elasticsearch.plugin:transport-netty4-client:jar:6.4.3/io.netty:netty-transport:jar:4.1.38.Final</node>
+            <node x="1535.1750000000002" y="384.0">org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.slf4j:slf4j-api:jar:1.7.26</node>
+            <node x="6911.0625" y="918.0">org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0</node>
+            <node x="5013.375" y="595.0">org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3</node>
+            <node x="6022.415330774853" y="273.0">org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.elasticsearch:elasticsearch-core:jar:6.4.3</node>
+            <node x="3654.415330774852" y="384.0">org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.elasticsearch:elasticsearch-secure-sm:jar:6.4.3</node>
+            <node x="4524.415330774852" y="384.0">org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.elasticsearch:elasticsearch-x-content:jar:6.4.3</node>
+            <node x="3994.970965956559" y="273.0">org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.elasticsearch:elasticsearch-x-content:jar:6.4.3/com.fasterxml.jackson.dataformat:jackson-dataformat-smile:jar:2.9.9</node>
+            <node x="4439.674109231414" y="273.0">org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.elasticsearch:elasticsearch-x-content:jar:6.4.3/com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:jar:2.9.9</node>
+            <node x="4637.674109231414" y="273.0">org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.elasticsearch:elasticsearch-x-content:jar:6.4.3/com.fasterxml.jackson.dataformat:jackson-dataformat-cbor:jar:2.9.9</node>
+            <node x="5815.415330774853" y="384.0">org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.apache.lucene:lucene-core:jar:7.4.0</node>
+            <node x="5467.415330774852" y="384.0">org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.apache.lucene:lucene-analyzers-common:jar:7.4.0</node>
+            <node x="5128.415330774852" y="384.0">org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.apache.lucene:lucene-backward-codecs:jar:7.4.0</node>
+            <node x="4865.415330774852" y="384.0">org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.apache.lucene:lucene-grouping:jar:7.4.0</node>
+            <node x="4709.415330774852" y="384.0">org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.apache.lucene:lucene-highlighter:jar:7.4.0</node>
+            <node x="5013.415330774852" y="384.0">org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.apache.lucene:lucene-join:jar:7.4.0</node>
+            <node x="5325.415330774852" y="384.0">org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.apache.lucene:lucene-memory:jar:7.4.0</node>
+            <node x="4404.415330774852" y="384.0">org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.apache.lucene:lucene-misc:jar:7.4.0</node>
+            <node x="3845.415330774852" y="384.0">org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.apache.lucene:lucene-queries:jar:7.4.0</node>
+            <node x="5935.415330774853" y="384.0">org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.apache.lucene:lucene-queryparser:jar:7.4.0</node>
+            <node x="5671.415330774853" y="384.0">org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.apache.lucene:lucene-sandbox:jar:7.4.0</node>
+            <node x="4203.415330774852" y="384.0">org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.apache.lucene:lucene-spatial:jar:7.4.0</node>
+            <node x="6101.415330774853" y="384.0">org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.apache.lucene:lucene-spatial-extras:jar:7.4.0</node>
+            <node x="6505.415330774853" y="384.0">org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.apache.lucene:lucene-spatial3d:jar:7.4.0</node>
+            <node x="3982.415330774852" y="384.0">org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.apache.lucene:lucene-suggest:jar:7.4.0</node>
+            <node x="6652.415330774853" y="384.0">org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.elasticsearch:elasticsearch-cli:jar:6.4.3</node>
+            <node x="6695.665330774853" y="273.0">org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.elasticsearch:elasticsearch-cli:jar:6.4.3/net.sf.jopt-simple:jopt-simple:jar:5.0.2</node>
+            <node x="4122.415330774852" y="384.0">org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/com.carrotsearch:hppc:jar:0.7.1</node>
+            <node x="6273.415330774853" y="384.0">org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/com.tdunning:t-digest:jar:3.2</node>
+            <node x="6370.415330774853" y="384.0">org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.hdrhistogram:HdrHistogram:jar:2.1.9</node>
+            <node x="2688.125" y="384.0">org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.apache.logging.log4j:log4j-api:jar:2.11.2</node>
+            <node x="4335.415330774852" y="384.0">org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.elasticsearch:jna:jar:4.5.1</node>
+            <node x="7183.519497441519" y="817.0">org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch.client:elasticsearch-rest-client:jar:6.7.0</node>
+            <node x="7371.519497441519" y="817.0">org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch.plugin:parent-join-client:jar:6.7.0</node>
+            <node x="6994.519497441519" y="817.0">org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch.plugin:aggs-matrix-stats-client:jar:6.7.0</node>
+            <node x="4911.375" y="817.0">org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch.plugin:rank-eval-client:jar:6.7.0</node>
+            <node x="7522.519497441519" y="817.0">org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch.plugin:lang-mustache-client:jar:6.7.0</node>
+            <node x="7557.019497441519" y="706.0">org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch.plugin:lang-mustache-client:jar:6.7.0/com.github.spullara.mustache.java:compiler:jar:0.9.3</node>
+            <node x="154.75" y="918.0">org.elasticsearch.client:elasticsearch-rest-client:jar:6.7.0</node>
+            <node x="249.25" y="817.0">org.elasticsearch.client:elasticsearch-rest-client:jar:6.7.0/org.apache.httpcomponents:httpcore:jar:4.4.11</node>
+            <node x="350.25" y="817.0">org.elasticsearch.client:elasticsearch-rest-client:jar:6.7.0/org.apache.httpcomponents:httpasyncclient:jar:4.1.4</node>
+            <node x="124.25" y="817.0">org.elasticsearch.client:elasticsearch-rest-client:jar:6.7.0/org.apache.httpcomponents:httpcore-nio:jar:4.4.11</node>
+            <node x="142.0" y="706.0">org.elasticsearch.client:elasticsearch-rest-client:jar:6.7.0/commons-codec:commons-codec:jar:1.11</node>
+            <node x="19.25" y="817.0">org.apache.httpcomponents:httpclient:jar:4.5.9</node>
+            <node x="0.0" y="706.0">org.apache.httpcomponents:httpclient:jar:4.5.9/org.apache.httpcomponents:httpcore:jar:4.4.10</node>
+            <node x="388.875" y="918.0">org.apache.httpcomponents:httpcore:jar:4.4.10</node>
+            <node x="4805.375" y="918.0">junit:junit:jar:4.12</node>
+            <node x="4775.375" y="817.0">junit:junit:jar:4.12/org.hamcrest:hamcrest-core:jar:1.3</node>
+            <node x="812.0745548767713" y="817.0">org.projectlombok:lombok:jar:1.18.8</node>
+            <node x="7648.741221543438" y="273.0">org.springframework:spring-web:jar:5.1.8.RELEASE</node>
+            <node x="1827.125" y="192.0">org.springframework:spring-web:jar:5.1.8.RELEASE/org.springframework:spring-beans:jar:5.1.9.RELEASE</node>
+            <node x="1313.5415870405154" y="81.0">org.springframework:spring-web:jar:5.1.8.RELEASE/org.springframework:spring-core:jar:5.1.9.RELEASE</node>
+            <node x="1320.5415870405154" y="0.0">org.springframework:spring-web:jar:5.1.8.RELEASE/org.springframework:spring-core:jar:5.1.9.RELEASE/org.springframework:spring-jcl:jar:5.1.9.RELEASE</node>
+            <node x="7868.019497441519" y="817.0">com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.9.9</node>
+            <node x="7104.6875" y="595.0">com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.9.9/com.fasterxml.jackson.core:jackson-annotations:jar:2.9.0</node>
+            <node x="7181.778275898081" y="273.0">com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.9.9/com.fasterxml.jackson.core:jackson-core:jar:2.9.9</node>
+            <node x="7051.5625" y="706.0">com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.9.9/com.fasterxml.jackson.core:jackson-databind:jar:2.9.9</node>
+            <node x="536.0" y="918.0">vip.readm:common:jar:1.0-SNAPSHOT</node>
+            <node x="487.25" y="817.0">vip.readm:common:jar:1.0-SNAPSHOT/commons-logging:commons-logging:jar:1.2</node>
+            <node x="589.75" y="706.0">org.springframework.boot:spring-boot-autoconfigure:jar:2.1.7.RELEASE</node>
+            <node x="1032.25" y="595.0">org.springframework.boot:spring-boot-autoconfigure:jar:2.1.7.RELEASE/org.springframework.boot:spring-boot:jar:2.1.7.RELEASE</node>
+            <node x="7695.519497441519" y="918.0">org.springframework.boot:spring-boot-configuration-processor:jar:2.1.7.RELEASE</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.elasticsearch:elasticsearch-cli:jar:6.4.3" target="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.elasticsearch:elasticsearch-core:jar:6.4.3">
+              <point x="-30.75" y="-15.5" />
+              <point x="6683.165330774853" y="334.0" />
+              <point x="6136.581997441519" y="334.0" />
+              <point x="45.66666666666674" y="15.5" />
+            </edge>
+            <edge source="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3" target="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.apache.lucene:lucene-misc:jar:7.4.0">
+              <point x="-16.960000000000036" y="-15.5" />
+              <point x="5049.415" y="475.0" />
+              <point x="4454.415330774852" y="475.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="vip.readm:data-es-rest:1.0-SNAPSHOT" target="org.springframework.boot:spring-boot-configuration-processor:jar:2.1.7.RELEASE">
+              <point x="38.625" y="-15.5" />
+              <point x="1765.875" y="1009.0" />
+              <point x="7819.519497441519" y="1009.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3" target="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.apache.logging.log4j:log4j-api:jar:2.11.2">
+              <point x="-50.88000000000011" y="-15.5" />
+              <point x="5015.495" y="555.0" />
+              <point x="2751.125" y="555.0" />
+              <point x="21.0" y="15.5" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.elasticsearch.client:transport:jar:6.4.3" target="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.elasticsearch.client:transport:jar:6.4.3/org.elasticsearch.plugin:lang-mustache-client:jar:6.4.3">
+              <point x="0.0" y="-15.5" />
+              <point x="3267.855079104007" y="656.0" />
+              <point x="3258.415330774852" y="656.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE" target="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/joda-time:joda-time:jar:2.10.3">
+              <point x="0.0" y="-15.5" />
+              <point x="2906.375" y="757.0" />
+              <point x="2763.220965956559" y="757.0" />
+              <point x="2763.220965956559" y="575.0" />
+              <point x="3139.8193648182933" y="575.0" />
+              <point x="-22.0" y="15.5" />
+            </edge>
+            <edge source="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0" target="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch.client:elasticsearch-rest-client:jar:6.7.0">
+              <point x="19.08333333333337" y="-15.5" />
+              <point x="7044.645833333333" y="878.0" />
+              <point x="7267.519497441519" y="878.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE" target="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.slf4j:slf4j-api:jar:1.7.26">
+              <point x="-59.66666666666697" y="-15.5" />
+              <point x="2846.708333333333" y="787.0" />
+              <point x="1702.6750000000002" y="787.0" />
+              <point x="1702.6750000000002" y="565.0" />
+              <point x="1589.7750000000005" y="565.0" />
+              <point x="15.600000000000364" y="15.5" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE" target="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.7.RELEASE">
+              <point x="-63.75" y="-15.5" />
+              <point x="1843.741221543438" y="898.0" />
+              <point x="1050.8610314849598" y="898.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.elasticsearch.client:transport:jar:6.4.3" target="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.elasticsearch.client:transport:jar:6.4.3/org.elasticsearch.plugin:percolator-client:jar:6.4.3">
+              <point x="24.57142857142844" y="-15.5" />
+              <point x="3292.4265076754355" y="676.0" />
+              <point x="3569.415330774852" y="676.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.7.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.1.7.RELEASE/org.slf4j:jul-to-slf4j:jar:1.7.26" target="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.slf4j:slf4j-api:jar:1.7.26">
+              <point x="0.0" y="-15.5" />
+              <point x="1429.625" y="575.0" />
+              <point x="1558.5749999999998" y="575.0" />
+              <point x="-15.600000000000364" y="15.5" />
+            </edge>
+            <edge source="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0" target="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch.plugin:parent-join-client:jar:6.7.0">
+              <point x="57.25" y="-15.5" />
+              <point x="7082.8125" y="888.0" />
+              <point x="7437.019497441519" y="888.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3" target="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.apache.lucene:lucene-spatial:jar:7.4.0">
+              <point x="-25.440000000000055" y="-15.5" />
+              <point x="5040.9349999999995" y="495.0" />
+              <point x="4259.415330774852" y="495.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.elasticsearch:elasticsearch-cli:jar:6.4.3" target="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.elasticsearch:elasticsearch-cli:jar:6.4.3/net.sf.jopt-simple:jopt-simple:jar:5.0.2">
+              <point x="30.75" y="-15.5" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.elasticsearch.client:transport:jar:6.4.3" target="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.elasticsearch.client:transport:jar:6.4.3/org.elasticsearch.plugin:reindex-client:jar:6.4.3">
+              <point x="-24.57142857142844" y="-15.5" />
+              <point x="3243.2836505325786" y="676.0" />
+              <point x="2966.415330774852" y="676.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="vip.readm:common:jar:1.0-SNAPSHOT" target="vip.readm:common:jar:1.0-SNAPSHOT/commons-logging:commons-logging:jar:1.2">
+              <point x="-20.75" y="-15.5" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3" target="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.hdrhistogram:HdrHistogram:jar:2.1.9">
+              <point x="42.40000000000009" y="-15.5" />
+              <point x="5108.775" y="555.0" />
+              <point x="6427.915330774853" y="555.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3" target="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.apache.lucene:lucene-spatial3d:jar:7.4.0">
+              <point x="46.63999999999987" y="-15.5" />
+              <point x="5113.014999999999" y="565.0" />
+              <point x="6568.915330774853" y="565.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0" target="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch.plugin:aggs-matrix-stats-client:jar:6.7.0">
+              <point x="-19.08333333333337" y="-15.5" />
+              <point x="7006.479166666666" y="868.0" />
+              <point x="7079.019497441519" y="868.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="vip.readm:data-es-rest:1.0-SNAPSHOT" target="com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.9.9">
+              <point x="47.20833333333303" y="-15.5" />
+              <point x="1774.458333333333" y="1019.0" />
+              <point x="7954.019497441519" y="1019.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE" target="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.springframework:spring-tx:jar:5.1.9.RELEASE">
+              <point x="39.777777777777374" y="-15.5" />
+              <point x="2946.1527777777774" y="777.0" />
+              <point x="3643.915330774852" y="777.0" />
+              <point x="3643.915330774852" y="364.0" />
+              <point x="3664.674109231414" y="364.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.elasticsearch:elasticsearch-x-content:jar:6.4.3" target="com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.9.9/com.fasterxml.jackson.core:jackson-core:jar:2.9.9">
+              <point x="68.75" y="-15.5" />
+              <point x="4675.665330774852" y="344.0" />
+              <point x="7195.153275898081" y="344.0" />
+              <point x="-40.125" y="15.5" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.7.RELEASE" target="org.springframework.boot:spring-boot-autoconfigure:jar:2.1.7.RELEASE">
+              <point x="-60.41666666666697" y="-15.5" />
+              <point x="990.4443648182928" y="797.0" />
+              <point x="730.75" y="797.0" />
+              <point x="47.0" y="15.5" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.7.RELEASE" target="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.7.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.1.7.RELEASE">
+              <point x="12.08333333333303" y="-15.5" />
+              <point x="1062.9443648182928" y="777.0" />
+              <point x="1234.1653307748525" y="777.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-autoconfigure:jar:2.1.7.RELEASE" target="org.springframework.boot:spring-boot-autoconfigure:jar:2.1.7.RELEASE/org.springframework.boot:spring-boot:jar:2.1.7.RELEASE">
+              <point x="0.0" y="-15.5" />
+              <point x="683.75" y="686.0" />
+              <point x="1057.75" y="686.0" />
+              <point x="-25.5" y="15.5" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.elasticsearch.plugin:transport-netty4-client:jar:6.4.3" target="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.elasticsearch.plugin:transport-netty4-client:jar:6.4.3/io.netty:netty-common:jar:4.1.38.Final">
+              <point x="23.0" y="-15.5" />
+              <point x="2284.8193648182933" y="545.0" />
+              <point x="2351.125" y="545.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.elasticsearch.plugin:transport-netty4-client:jar:6.4.3" target="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.elasticsearch.plugin:transport-netty4-client:jar:6.4.3/io.netty:netty-codec-http:jar:4.1.38.Final">
+              <point x="-69.0" y="-15.5" />
+              <point x="2192.8193648182933" y="565.0" />
+              <point x="1956.125" y="565.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.springframework:spring-context:jar:5.1.9.RELEASE/org.springframework:spring-aop:jar:5.1.9.RELEASE" target="org.springframework:spring-web:jar:5.1.8.RELEASE/org.springframework:spring-core:jar:5.1.9.RELEASE">
+              <point x="-24.25" y="-15.5" />
+              <point x="1303.75" y="172.0" />
+              <point x="1363.5415870405154" y="172.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.springframework:spring-web:jar:5.1.8.RELEASE/org.springframework:spring-beans:jar:5.1.9.RELEASE" target="org.springframework:spring-web:jar:5.1.8.RELEASE/org.springframework:spring-core:jar:5.1.9.RELEASE">
+              <point x="0.0" y="-15.5" />
+              <point x="1881.625" y="162.0" />
+              <point x="1385.763809262738" y="162.0" />
+              <point x="22.222222222222626" y="15.5" />
+            </edge>
+            <edge source="vip.readm:data-es-rest:1.0-SNAPSHOT" target="org.projectlombok:lombok:jar:1.18.8">
+              <point x="-4.29166666666697" y="-15.5" />
+              <point x="1722.958333333333" y="969.0" />
+              <point x="869.8245548767713" y="969.0" />
+              <point x="19.25" y="15.5" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.7.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.1.7.RELEASE/ch.qos.logback:logback-classic:jar:1.2.3" target="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.7.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.1.7.RELEASE/ch.qos.logback:logback-classic:jar:1.2.3/ch.qos.logback:logback-core:jar:1.2.3">
+              <point x="-30.25" y="-15.5" />
+              <point x="1273.875" y="555.0" />
+              <point x="1431.5" y="555.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3" target="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.apache.lucene:lucene-suggest:jar:7.4.0">
+              <point x="-33.92000000000007" y="-15.5" />
+              <point x="5032.455" y="515.0" />
+              <point x="4042.415330774852" y="515.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.springframework.data:spring-data-commons:jar:2.1.10.RELEASE" target="org.springframework:spring-web:jar:5.1.8.RELEASE/org.springframework:spring-beans:jar:5.1.9.RELEASE">
+              <point x="54.0" y="-15.5" />
+              <point x="1870.625" y="565.0" />
+              <point x="1881.625" y="565.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.9.9" target="com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.9.9/com.fasterxml.jackson.core:jackson-databind:jar:2.9.9">
+              <point x="-57.33333333333334" y="-15.5" />
+              <point x="7896.686164108185" y="797.0" />
+              <point x="7151.3125" y="797.0" />
+              <point x="33.25" y="15.5" />
+            </edge>
+            <edge source="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3" target="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.elasticsearch:elasticsearch-secure-sm:jar:6.4.3">
+              <point x="-42.40000000000009" y="-15.5" />
+              <point x="5023.975" y="535.0" />
+              <point x="3739.915330774852" y="535.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.elasticsearch:elasticsearch-x-content:jar:6.4.3" target="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.elasticsearch:elasticsearch-x-content:jar:6.4.3/com.fasterxml.jackson.dataformat:jackson-dataformat-smile:jar:2.9.9">
+              <point x="-41.25" y="-15.5" />
+              <point x="4565.665330774852" y="344.0" />
+              <point x="4085.470965956559" y="344.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.elasticsearch:elasticsearch-x-content:jar:6.4.3" target="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.elasticsearch:elasticsearch-x-content:jar:6.4.3/com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:jar:2.9.9">
+              <point x="-13.75" y="-15.5" />
+              <point x="4593.165330774852" y="334.0" />
+              <point x="4528.674109231414" y="334.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.elasticsearch.plugin:transport-netty4-client:jar:6.4.3" target="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.elasticsearch.plugin:transport-netty4-client:jar:6.4.3/io.netty:netty-buffer:jar:4.1.38.Final">
+              <point x="0.0" y="-15.5" />
+              <point x="2261.8193648182933" y="535.0" />
+              <point x="2223.125" y="535.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.7.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.1.7.RELEASE" target="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.7.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.1.7.RELEASE/ch.qos.logback:logback-classic:jar:1.2.3">
+              <point x="-65.0" y="-15.5" />
+              <point x="1169.1653307748525" y="656.0" />
+              <point x="1304.125" y="656.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.elasticsearch.client:elasticsearch-rest-client:jar:6.7.0" target="org.elasticsearch.client:elasticsearch-rest-client:jar:6.7.0/org.apache.httpcomponents:httpcore-nio:jar:4.4.11">
+              <point x="-33.600000000000364" y="-15.5" />
+              <point x="205.14999999999964" y="888.0" />
+              <point x="176.25" y="888.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.elasticsearch.plugin:transport-netty4-client:jar:6.4.3" target="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.elasticsearch.plugin:transport-netty4-client:jar:6.4.3/io.netty:netty-codec:jar:4.1.38.Final">
+              <point x="69.0" y="-15.5" />
+              <point x="2330.8193648182933" y="565.0" />
+              <point x="2618.125" y="565.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.7.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.1.7.RELEASE" target="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.7.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.1.7.RELEASE/org.apache.logging.log4j:log4j-to-slf4j:jar:2.11.2">
+              <point x="65.0" y="-15.5" />
+              <point x="1299.1653307748525" y="676.0" />
+              <point x="1639.1750000000002" y="676.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="vip.readm:data-es-rest:1.0-SNAPSHOT" target="org.springframework.boot:spring-boot-autoconfigure:jar:2.1.7.RELEASE">
+              <point x="-12.875" y="-15.5" />
+              <point x="1714.375" y="979.0" />
+              <point x="636.75" y="979.0" />
+              <point x="-47.0" y="15.5" />
+            </edge>
+            <edge source="org.elasticsearch.client:elasticsearch-rest-client:jar:6.7.0" target="org.elasticsearch.client:elasticsearch-rest-client:jar:6.7.0/commons-codec:commons-codec:jar:1.11">
+              <point x="0.0" y="-15.5" />
+              <point x="32.25" y="15.5" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.springframework:spring-context:jar:5.1.9.RELEASE" target="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.springframework:spring-context:jar:5.1.9.RELEASE/org.springframework:spring-aop:jar:5.1.9.RELEASE">
+              <point x="14.5" y="-15.5" />
+              <point x="1313.0" y="364.0" />
+              <point x="1328.0" y="364.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.elasticsearch.plugin:transport-netty4-client:jar:6.4.3" target="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.elasticsearch.plugin:transport-netty4-client:jar:6.4.3/io.netty:netty-transport:jar:4.1.38.Final">
+              <point x="46.0" y="-15.5" />
+              <point x="2307.8193648182933" y="555.0" />
+              <point x="2488.625" y="555.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE" target="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.springframework.data:spring-data-commons:jar:2.1.10.RELEASE">
+              <point x="-39.777777777777374" y="-15.5" />
+              <point x="2866.5972222222226" y="777.0" />
+              <point x="1816.625" y="777.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.springframework.data:spring-data-commons:jar:2.1.10.RELEASE" target="org.springframework:spring-web:jar:5.1.8.RELEASE/org.springframework:spring-core:jar:5.1.9.RELEASE">
+              <point x="0.0" y="-15.5" />
+              <point x="1816.625" y="172.0" />
+              <point x="1374.6526981516267" y="172.0" />
+              <point x="11.111111111111313" y="15.5" />
+            </edge>
+            <edge source="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3" target="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.apache.lucene:lucene-sandbox:jar:7.4.0">
+              <point x="16.960000000000036" y="-15.5" />
+              <point x="5083.335" y="495.0" />
+              <point x="5733.415330774853" y="495.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="vip.readm:data-es-rest:1.0-SNAPSHOT" target="org.springframework:spring-web:jar:5.1.8.RELEASE">
+              <point x="30.04166666666697" y="-15.5" />
+              <point x="1757.291666666667" y="999.0" />
+              <point x="7685.019497441519" y="999.0" />
+              <point x="7685.019497441519" y="364.0" />
+              <point x="7697.741221543438" y="364.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE" target="com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.9.9/com.fasterxml.jackson.core:jackson-databind:jar:2.9.9">
+              <point x="79.55555555555566" y="-15.5" />
+              <point x="2985.9305555555557" y="797.0" />
+              <point x="7084.8125" y="797.0" />
+              <point x="-33.25" y="15.5" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.elasticsearch.client:transport:jar:6.4.3" target="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.elasticsearch.plugin:transport-netty4-client:jar:6.4.3">
+              <point x="-36.85714285714312" y="-15.5" />
+              <point x="3230.997936246864" y="686.0" />
+              <point x="2302.0693648182933" y="686.0" />
+              <point x="40.25" y="15.5" />
+            </edge>
+            <edge source="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3" target="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.elasticsearch:elasticsearch-cli:jar:6.4.3">
+              <point x="50.88000000000011" y="-15.5" />
+              <point x="5117.255" y="575.0" />
+              <point x="6713.915330774853" y="575.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.7.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.1.7.RELEASE/ch.qos.logback:logback-classic:jar:1.2.3" target="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.slf4j:slf4j-api:jar:1.7.26">
+              <point x="30.25" y="-15.5" />
+              <point x="1334.375" y="565.0" />
+              <point x="1542.9750000000004" y="565.0" />
+              <point x="-31.199999999999818" y="15.5" />
+            </edge>
+            <edge source="org.elasticsearch.client:elasticsearch-rest-client:jar:6.7.0" target="org.elasticsearch.client:elasticsearch-rest-client:jar:6.7.0/org.apache.httpcomponents:httpasyncclient:jar:4.1.4">
+              <point x="67.19999999999982" y="-15.5" />
+              <point x="305.9499999999998" y="898.0" />
+              <point x="408.75" y="898.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3" target="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/com.tdunning:t-digest:jar:3.2">
+              <point x="38.159999999999854" y="-15.5" />
+              <point x="5104.535" y="545.0" />
+              <point x="6311.915330774853" y="545.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.springframework:spring-tx:jar:5.1.9.RELEASE" target="org.springframework:spring-web:jar:5.1.8.RELEASE/org.springframework:spring-beans:jar:5.1.9.RELEASE">
+              <point x="-21.0" y="-15.5" />
+              <point x="3643.674109231414" y="253.0" />
+              <point x="1903.4250000000002" y="253.0" />
+              <point x="21.800000000000182" y="15.5" />
+            </edge>
+            <edge source="com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.9.9" target="com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.9.9/com.fasterxml.jackson.core:jackson-annotations:jar:2.9.0">
+              <point x="0.0" y="-15.5" />
+              <point x="7954.019497441519" y="797.0" />
+              <point x="7977.186164108185" y="797.0" />
+              <point x="7977.186164108185" y="686.0" />
+              <point x="7216.4375" y="686.0" />
+              <point x="37.25" y="15.5" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.7.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.1.7.RELEASE/org.apache.logging.log4j:log4j-to-slf4j:jar:2.11.2" target="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.slf4j:slf4j-api:jar:1.7.26">
+              <point x="-26.5" y="-15.5" />
+              <point x="1612.6750000000002" y="575.0" />
+              <point x="1574.1750000000002" y="575.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="vip.readm:data-es-rest:1.0-SNAPSHOT" target="vip.readm:common:jar:1.0-SNAPSHOT">
+              <point x="-21.45833333333303" y="-15.5" />
+              <point x="1705.791666666667" y="989.0" />
+              <point x="577.5" y="989.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0" target="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3">
+              <point x="-57.25" y="-15.5" />
+              <point x="6968.3125" y="898.0" />
+              <point x="6984.019497441519" y="898.0" />
+              <point x="6984.019497441519" y="686.0" />
+              <point x="5092.875" y="686.0" />
+              <point x="26.5" y="15.5" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE" target="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE">
+              <point x="63.75" y="-15.5" />
+              <point x="1971.241221543438" y="898.0" />
+              <point x="2906.375" y="898.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.springframework:spring-context:jar:5.1.9.RELEASE" target="org.springframework:spring-web:jar:5.1.8.RELEASE/org.springframework:spring-core:jar:5.1.9.RELEASE">
+              <point x="-14.5" y="-15.5" />
+              <point x="1284.0" y="364.0" />
+              <point x="1269.0" y="364.0" />
+              <point x="1269.0" y="162.0" />
+              <point x="1352.430475929404" y="162.0" />
+              <point x="-11.111111111111313" y="15.5" />
+            </edge>
+            <edge source="vip.readm:data-es-rest:1.0-SNAPSHOT" target="org.elasticsearch.client:elasticsearch-rest-client:jar:6.7.0">
+              <point x="-38.625" y="-15.5" />
+              <point x="1688.625" y="1009.0" />
+              <point x="238.75" y="1009.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.elasticsearch.client:transport:jar:6.4.3" target="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3">
+              <point x="36.85714285714312" y="-15.5" />
+              <point x="3304.71222196115" y="686.0" />
+              <point x="5039.875" y="686.0" />
+              <point x="-26.5" y="15.5" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.elasticsearch.plugin:transport-netty4-client:jar:6.4.3" target="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.elasticsearch.plugin:transport-netty4-client:jar:6.4.3/io.netty:netty-handler:jar:4.1.38.Final">
+              <point x="-23.0" y="-15.5" />
+              <point x="2238.8193648182933" y="545.0" />
+              <point x="2162.625" y="545.0" />
+              <point x="2162.625" y="354.0" />
+              <point x="2086.625" y="354.0" />
+              <point x="27.25" y="15.5" />
+            </edge>
+            <edge source="com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.9.9/com.fasterxml.jackson.core:jackson-databind:jar:2.9.9" target="com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.9.9/com.fasterxml.jackson.core:jackson-core:jar:2.9.9">
+              <point x="-33.25" y="-15.5" />
+              <point x="7084.8125" y="686.0" />
+              <point x="7094.1875" y="686.0" />
+              <point x="7094.1875" y="364.0" />
+              <point x="7248.653275898081" y="364.0" />
+              <point x="13.375" y="15.5" />
+            </edge>
+            <edge source="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3" target="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/joda-time:joda-time:jar:2.10.3">
+              <point x="-46.63999999999987" y="-15.5" />
+              <point x="5019.735000000001" y="545.0" />
+              <point x="3183.8193648182933" y="545.0" />
+              <point x="22.0" y="15.5" />
+            </edge>
+            <edge source="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.elasticsearch:elasticsearch-x-content:jar:6.4.3" target="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.elasticsearch:elasticsearch-core:jar:6.4.3">
+              <point x="41.25" y="-15.5" />
+              <point x="4648.165330774852" y="334.0" />
+              <point x="6045.248664108185" y="334.0" />
+              <point x="-45.66666666666674" y="15.5" />
+            </edge>
+            <edge source="vip.readm:data-es-rest:1.0-SNAPSHOT" target="org.apache.httpcomponents:httpclient:jar:4.5.9">
+              <point x="-47.20833333333303" y="-15.5" />
+              <point x="1680.041666666667" y="1019.0" />
+              <point x="40.5" y="1019.0" />
+              <point x="-21.25" y="15.5" />
+            </edge>
+            <edge source="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3" target="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.apache.lucene:lucene-analyzers-common:jar:7.4.0">
+              <point x="12.7199999999998" y="-15.5" />
+              <point x="5079.094999999999" y="485.0" />
+              <point x="5559.415330774852" y="485.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="junit:junit:jar:4.12" target="junit:junit:jar:4.12/org.hamcrest:hamcrest-core:jar:1.3">
+              <point x="0.0" y="-15.5" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE" target="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.springframework:spring-context:jar:5.1.9.RELEASE">
+              <point x="-79.55555555555566" y="-15.5" />
+              <point x="2826.8194444444443" y="797.0" />
+              <point x="1506.8662215434383" y="797.0" />
+              <point x="1506.8662215434383" y="545.0" />
+              <point x="1327.5" y="545.0" />
+              <point x="29.0" y="15.5" />
+            </edge>
+            <edge source="org.springframework:spring-web:jar:5.1.8.RELEASE/org.springframework:spring-core:jar:5.1.9.RELEASE" target="org.springframework:spring-web:jar:5.1.8.RELEASE/org.springframework:spring-core:jar:5.1.9.RELEASE/org.springframework:spring-jcl:jar:5.1.9.RELEASE">
+              <point x="0.0" y="-15.5" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.springframework:spring-web:jar:5.1.8.RELEASE" target="org.springframework:spring-web:jar:5.1.8.RELEASE/org.springframework:spring-core:jar:5.1.9.RELEASE">
+              <point x="24.5" y="-15.5" />
+              <point x="7722.241221543438" y="142.0" />
+              <point x="1407.9860314849598" y="142.0" />
+              <point x="44.44444444444434" y="15.5" />
+            </edge>
+            <edge source="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3" target="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.elasticsearch:elasticsearch-x-content:jar:6.4.3">
+              <point x="-12.7199999999998" y="-15.5" />
+              <point x="5053.655000000001" y="465.0" />
+              <point x="4606.915330774852" y="465.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3" target="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.apache.lucene:lucene-highlighter:jar:7.4.0">
+              <point x="-8.480000000000018" y="-15.5" />
+              <point x="5057.895" y="455.0" />
+              <point x="4777.415330774852" y="455.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3" target="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.apache.lucene:lucene-queryparser:jar:7.4.0">
+              <point x="25.440000000000055" y="-15.5" />
+              <point x="5091.8150000000005" y="515.0" />
+              <point x="6007.915330774853" y="515.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="vip.readm:data-es-rest:1.0-SNAPSHOT" target="junit:junit:jar:4.12">
+              <point x="12.875" y="-15.5" />
+              <point x="1740.125" y="979.0" />
+              <point x="4833.375" y="979.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch.plugin:lang-mustache-client:jar:6.7.0" target="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch.plugin:lang-mustache-client:jar:6.7.0/com.github.spullara.mustache.java:compiler:jar:0.9.3">
+              <point x="0.0" y="-15.5" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.elasticsearch.client:transport:jar:6.4.3" target="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.elasticsearch.client:transport:jar:6.4.3/org.elasticsearch.plugin:parent-join-client:jar:6.4.3">
+              <point x="12.285714285714675" y="-15.5" />
+              <point x="3280.1407933897217" y="666.0" />
+              <point x="3419.915330774852" y="666.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.elasticsearch:elasticsearch-x-content:jar:6.4.3" target="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.elasticsearch:elasticsearch-x-content:jar:6.4.3/com.fasterxml.jackson.dataformat:jackson-dataformat-cbor:jar:2.9.9">
+              <point x="13.75" y="-15.5" />
+              <point x="4620.665330774852" y="324.0" />
+              <point x="4726.674109231414" y="324.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3" target="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/com.carrotsearch:hppc:jar:0.7.1">
+              <point x="-29.679999999999836" y="-15.5" />
+              <point x="5036.695" y="505.0" />
+              <point x="4152.915330774852" y="505.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="vip.readm:data-es-rest:1.0-SNAPSHOT" target="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0">
+              <point x="21.45833333333303" y="-15.5" />
+              <point x="1748.708333333333" y="989.0" />
+              <point x="7025.5625" y="989.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.7.RELEASE" target="org.springframework.boot:spring-boot-autoconfigure:jar:2.1.7.RELEASE/org.springframework.boot:spring-boot:jar:2.1.7.RELEASE">
+              <point x="36.25" y="-15.5" />
+              <point x="1087.1110314849598" y="787.0" />
+              <point x="1342.1653307748525" y="787.0" />
+              <point x="1342.1653307748525" y="646.0" />
+              <point x="1108.75" y="646.0" />
+              <point x="25.5" y="15.5" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE" target="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.elasticsearch.client:transport:jar:6.4.3">
+              <point x="19.888888888888687" y="-15.5" />
+              <point x="2926.2638888888887" y="767.0" />
+              <point x="3267.855079104007" y="767.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.elasticsearch.client:elasticsearch-rest-client:jar:6.7.0" target="org.apache.httpcomponents:httpclient:jar:4.5.9">
+              <point x="-67.19999999999982" y="-15.5" />
+              <point x="171.55000000000018" y="898.0" />
+              <point x="83.0" y="898.0" />
+              <point x="21.25" y="15.5" />
+            </edge>
+            <edge source="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.elasticsearch:elasticsearch-x-content:jar:6.4.3" target="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.7.RELEASE/org.yaml:snakeyaml:jar:1.23">
+              <point x="-68.75" y="-15.5" />
+              <point x="4538.165330774852" y="354.0" />
+              <point x="3420.970965956559" y="354.0" />
+              <point x="23.25" y="15.5" />
+            </edge>
+            <edge source="vip.readm:data-es-rest:1.0-SNAPSHOT" target="org.apache.httpcomponents:httpcore:jar:4.4.10">
+              <point x="-30.04166666666697" y="-15.5" />
+              <point x="1697.208333333333" y="999.0" />
+              <point x="429.375" y="999.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3" target="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.apache.lucene:lucene-core:jar:7.4.0">
+              <point x="21.199999999999818" y="-15.5" />
+              <point x="5087.575" y="505.0" />
+              <point x="5865.415330774853" y="505.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.9.9" target="com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.9.9/com.fasterxml.jackson.core:jackson-core:jar:2.9.9">
+              <point x="57.33333333333303" y="-15.5" />
+              <point x="8011.352830774851" y="797.0" />
+              <point x="7988.186164108185" y="797.0" />
+              <point x="7988.186164108185" y="354.0" />
+              <point x="7275.403275898081" y="354.0" />
+              <point x="40.125" y="15.5" />
+            </edge>
+            <edge source="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0" target="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch.plugin:rank-eval-client:jar:6.7.0">
+              <point x="-95.41666666666663" y="-15.5" />
+              <point x="6930.145833333333" y="898.0" />
+              <point x="4971.875" y="898.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.apache.httpcomponents:httpclient:jar:4.5.9" target="org.elasticsearch.client:elasticsearch-rest-client:jar:6.7.0/commons-codec:commons-codec:jar:1.11">
+              <point x="21.25" y="-15.5" />
+              <point x="83.0" y="797.0" />
+              <point x="174.25" y="797.0" />
+              <point x="-32.25" y="15.5" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.elasticsearch.client:transport:jar:6.4.3" target="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.elasticsearch.client:transport:jar:6.4.3/org.elasticsearch.plugin:rank-eval-client:jar:6.4.3">
+              <point x="-12.285714285714675" y="-15.5" />
+              <point x="3255.5693648182923" y="666.0" />
+              <point x="3101.915330774852" y="666.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-autoconfigure:jar:2.1.7.RELEASE/org.springframework.boot:spring-boot:jar:2.1.7.RELEASE" target="org.springframework:spring-web:jar:5.1.8.RELEASE/org.springframework:spring-core:jar:5.1.9.RELEASE">
+              <point x="-25.5" y="-15.5" />
+              <point x="1057.75" y="142.0" />
+              <point x="1330.2082537071824" y="142.0" />
+              <point x="-33.33333333333303" y="15.5" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.springframework:spring-context:jar:5.1.9.RELEASE" target="org.springframework:spring-web:jar:5.1.8.RELEASE/org.springframework:spring-beans:jar:5.1.9.RELEASE">
+              <point x="43.5" y="-15.5" />
+              <point x="1342.0" y="364.0" />
+              <point x="1538.75" y="364.0" />
+              <point x="1538.75" y="253.0" />
+              <point x="1859.8249999999998" y="253.0" />
+              <point x="-21.800000000000182" y="15.5" />
+            </edge>
+            <edge source="org.apache.httpcomponents:httpclient:jar:4.5.9" target="org.apache.httpcomponents:httpclient:jar:4.5.9/org.apache.httpcomponents:httpcore:jar:4.4.10">
+              <point x="-21.25" y="-15.5" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3" target="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.elasticsearch:jna:jar:4.5.1">
+              <point x="-21.199999999999818" y="-15.5" />
+              <point x="5045.175" y="485.0" />
+              <point x="4359.915330774852" y="485.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3" target="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.elasticsearch:elasticsearch-core:jar:6.4.3">
+              <point x="29.679999999999836" y="-15.5" />
+              <point x="5096.055" y="525.0" />
+              <point x="6090.915330774853" y="525.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.springframework:spring-tx:jar:5.1.9.RELEASE" target="org.springframework:spring-web:jar:5.1.8.RELEASE/org.springframework:spring-core:jar:5.1.9.RELEASE">
+              <point x="21.0" y="-15.5" />
+              <point x="3685.674109231414" y="152.0" />
+              <point x="1396.8749203738485" y="152.0" />
+              <point x="33.33333333333303" y="15.5" />
+            </edge>
+            <edge source="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3" target="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.apache.lucene:lucene-backward-codecs:jar:7.4.0">
+              <point x="4.239999999999782" y="-15.5" />
+              <point x="5070.615" y="465.0" />
+              <point x="5216.915330774852" y="465.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3" target="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.apache.lucene:lucene-grouping:jar:7.4.0">
+              <point x="-4.239999999999782" y="-15.5" />
+              <point x="5062.135" y="445.0" />
+              <point x="4929.415330774852" y="445.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE" target="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.elasticsearch.plugin:transport-netty4-client:jar:6.4.3">
+              <point x="-19.888888888888687" y="-15.5" />
+              <point x="2886.4861111111113" y="767.0" />
+              <point x="2221.5693648182933" y="767.0" />
+              <point x="-40.25" y="15.5" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.7.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.1.7.RELEASE/org.apache.logging.log4j:log4j-to-slf4j:jar:2.11.2" target="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.apache.logging.log4j:log4j-api:jar:2.11.2">
+              <point x="26.5" y="-15.5" />
+              <point x="1665.6750000000002" y="575.0" />
+              <point x="2709.125" y="575.0" />
+              <point x="-21.0" y="15.5" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE" target="com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.9.9/com.fasterxml.jackson.core:jackson-core:jar:2.9.9">
+              <point x="59.66666666666697" y="-15.5" />
+              <point x="2966.041666666667" y="787.0" />
+              <point x="6819.852830774853" y="787.0" />
+              <point x="6819.852830774853" y="354.0" />
+              <point x="7221.903275898081" y="354.0" />
+              <point x="-13.375" y="15.5" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-autoconfigure:jar:2.1.7.RELEASE/org.springframework.boot:spring-boot:jar:2.1.7.RELEASE" target="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.springframework:spring-context:jar:5.1.9.RELEASE">
+              <point x="25.5" y="-15.5" />
+              <point x="1108.75" y="545.0" />
+              <point x="1269.5" y="545.0" />
+              <point x="-29.0" y="15.5" />
+            </edge>
+            <edge source="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3" target="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.apache.lucene:lucene-spatial-extras:jar:7.4.0">
+              <point x="33.92000000000007" y="-15.5" />
+              <point x="5100.295" y="535.0" />
+              <point x="6177.415330774853" y="535.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.springframework:spring-context:jar:5.1.9.RELEASE/org.springframework:spring-aop:jar:5.1.9.RELEASE" target="org.springframework:spring-web:jar:5.1.8.RELEASE/org.springframework:spring-beans:jar:5.1.9.RELEASE">
+              <point x="24.25" y="-15.5" />
+              <point x="1352.25" y="243.0" />
+              <point x="1838.0249999999996" y="243.0" />
+              <point x="-43.600000000000364" y="15.5" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.7.RELEASE" target="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.7.RELEASE/javax.annotation:javax.annotation-api:jar:1.3.2">
+              <point x="-36.25" y="-15.5" />
+              <point x="1014.6110314849598" y="787.0" />
+              <point x="872.25" y="787.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.springframework:spring-context:jar:5.1.9.RELEASE" target="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.springframework:spring-context:jar:5.1.9.RELEASE/org.springframework:spring-expression:jar:5.1.9.RELEASE">
+              <point x="-43.5" y="-15.5" />
+              <point x="1255.0" y="364.0" />
+              <point x="1190.0" y="364.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3" target="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.apache.lucene:lucene-join:jar:7.4.0">
+              <point x="0.0" y="-15.5" />
+              <point x="5066.375" y="435.0" />
+              <point x="5060.915330774852" y="435.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="vip.readm:common:jar:1.0-SNAPSHOT" target="org.projectlombok:lombok:jar:1.18.8">
+              <point x="20.75" y="-15.5" />
+              <point x="598.25" y="898.0" />
+              <point x="831.3245548767713" y="898.0" />
+              <point x="-19.25" y="15.5" />
+            </edge>
+            <edge source="org.elasticsearch.client:elasticsearch-rest-client:jar:6.7.0" target="org.elasticsearch.client:elasticsearch-rest-client:jar:6.7.0/org.apache.httpcomponents:httpcore:jar:4.4.11">
+              <point x="33.600000000000364" y="-15.5" />
+              <point x="272.35000000000036" y="898.0" />
+              <point x="289.75" y="898.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.springframework:spring-web:jar:5.1.8.RELEASE" target="org.springframework:spring-web:jar:5.1.8.RELEASE/org.springframework:spring-beans:jar:5.1.9.RELEASE">
+              <point x="-24.5" y="-15.5" />
+              <point x="7673.241221543438" y="243.0" />
+              <point x="1925.2250000000004" y="243.0" />
+              <point x="43.600000000000364" y="15.5" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.elasticsearch.plugin:transport-netty4-client:jar:6.4.3" target="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.elasticsearch.plugin:transport-netty4-client:jar:6.4.3/io.netty:netty-resolver:jar:4.1.38.Final">
+              <point x="-46.0" y="-15.5" />
+              <point x="2215.8193648182933" y="555.0" />
+              <point x="2096.125" y="555.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.9.9/com.fasterxml.jackson.core:jackson-databind:jar:2.9.9" target="com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.9.9/com.fasterxml.jackson.core:jackson-annotations:jar:2.9.0">
+              <point x="33.25" y="-15.5" />
+              <point x="7151.3125" y="686.0" />
+              <point x="7141.9375" y="686.0" />
+              <point x="-37.25" y="15.5" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.7.RELEASE" target="org.springframework:spring-web:jar:5.1.8.RELEASE/org.springframework:spring-core:jar:5.1.9.RELEASE">
+              <point x="-12.08333333333303" y="-15.5" />
+              <point x="1038.7776981516267" y="777.0" />
+              <point x="957.25" y="777.0" />
+              <point x="957.25" y="132.0" />
+              <point x="1319.097142596071" y="132.0" />
+              <point x="-44.44444444444434" y="15.5" />
+            </edge>
+            <edge source="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3" target="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.apache.lucene:lucene-queries:jar:7.4.0">
+              <point x="-38.159999999999854" y="-15.5" />
+              <point x="5028.215" y="525.0" />
+              <point x="3903.915330774852" y="525.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.7.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.1.7.RELEASE" target="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.7.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.1.7.RELEASE/org.slf4j:jul-to-slf4j:jar:1.7.26">
+              <point x="0.0" y="-15.5" />
+              <point x="1234.1653307748525" y="666.0" />
+              <point x="1429.625" y="666.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.7.RELEASE" target="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.1.7.RELEASE/org.yaml:snakeyaml:jar:1.23">
+              <point x="60.41666666666697" y="-15.5" />
+              <point x="1111.2776981516267" y="797.0" />
+              <point x="1373.7209659565592" y="797.0" />
+              <point x="1373.7209659565592" y="686.0" />
+              <point x="1725.125" y="686.0" />
+              <point x="1725.125" y="364.0" />
+              <point x="3374.470965956559" y="364.0" />
+              <point x="-23.25" y="15.5" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.elasticsearch.client:transport:jar:6.4.3/org.elasticsearch.plugin:reindex-client:jar:6.4.3" target="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.elasticsearch.client:transport:jar:6.4.3/org.elasticsearch.plugin:reindex-client:jar:6.4.3/org.elasticsearch.client:elasticsearch-rest-client:jar:6.4.3">
+              <point x="0.0" y="-15.5" />
+              <point x="2966.415330774852" y="565.0" />
+              <point x="2876.125" y="565.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.elasticsearch.plugin:transport-netty4-client:jar:6.4.3/io.netty:netty-codec-http:jar:4.1.38.Final" target="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.elasticsearch.plugin:transport-netty4-client:jar:6.4.3/io.netty:netty-handler:jar:4.1.38.Final">
+              <point x="0.0" y="-15.5" />
+              <point x="1956.125" y="354.0" />
+              <point x="2032.125" y="354.0" />
+              <point x="-27.25" y="15.5" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.springframework.data:spring-data-commons:jar:2.1.10.RELEASE" target="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.slf4j:slf4j-api:jar:1.7.26">
+              <point x="-54.0" y="-15.5" />
+              <point x="1762.625" y="555.0" />
+              <point x="1605.375" y="555.0" />
+              <point x="31.199999999999818" y="15.5" />
+            </edge>
+            <edge source="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE/org.springframework.data:spring-data-elasticsearch:jar:3.1.10.RELEASE/org.springframework:spring-context:jar:5.1.9.RELEASE/org.springframework:spring-expression:jar:5.1.9.RELEASE" target="org.springframework:spring-web:jar:5.1.8.RELEASE/org.springframework:spring-core:jar:5.1.9.RELEASE">
+              <point x="0.0" y="-15.5" />
+              <point x="1190.0" y="152.0" />
+              <point x="1341.3193648182928" y="152.0" />
+              <point x="-22.222222222222626" y="15.5" />
+            </edge>
+            <edge source="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3" target="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch:elasticsearch:jar:6.4.3/org.apache.lucene:lucene-memory:jar:7.4.0">
+              <point x="8.480000000000018" y="-15.5" />
+              <point x="5074.855" y="475.0" />
+              <point x="5386.415330774852" y="475.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0" target="org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch.plugin:lang-mustache-client:jar:6.7.0">
+              <point x="95.41666666666663" y="-15.5" />
+              <point x="7120.979166666666" y="898.0" />
+              <point x="7598.519497441519" y="898.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="vip.readm:data-es-rest:1.0-SNAPSHOT" target="org.springframework.boot:spring-boot-starter-data-elasticsearch:jar:2.1.7.RELEASE">
+              <point x="4.29166666666697" y="-15.5" />
+              <point x="1731.541666666667" y="969.0" />
+              <point x="1907.491221543438" y="969.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0329639889196673" x="6944.0" y="856.0" />
+          <SelectedNodes>
+            <node>vip.readm:data-es-rest:1.0-SNAPSHOT</node>
+            <node>org.elasticsearch.client:elasticsearch-rest-high-level-client:jar:6.7.0/org.elasticsearch.client:elasticsearch-rest-client:jar:6.7.0</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>All</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/es-rest/src/main/java/vip/readm/data/es/properties/EsProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-100">
+          <caret line="23" selection-start-line="23" selection-end-line="23" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/es-rest/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1368">
+          <caret line="72" column="55" lean-forward="true" selection-start-line="72" selection-start-column="55" selection-end-line="72" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/6.4.3/elasticsearch-6.4.3-sources.jar!/org/elasticsearch/action/support/WriteRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="42" column="36" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/client/elasticsearch-rest-high-level-client/6.7.0/elasticsearch-rest-high-level-client-6.7.0.jar!/org/elasticsearch/client/RestHighLevelClient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="476" column="31" selection-start-line="476" selection-start-column="17" selection-end-line="476" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/es-rest/src/main/java/vip/readm/data/es/EsJsonUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2603">
+          <caret line="38" column="25" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/es-rest/src/main/java/vip/readm/data/es/pojo/impl/Page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2666">
+          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/es-rest/src/main/java/vip/readm/data/es/pojo/EsEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/es-rest/src/main/java/vip/readm/data/es/config/LocalDateTimeConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="37" column="16" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/es-rest/src/main/java/vip/readm/data/es/config/EsConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2242">
+          <caret line="179" column="5" selection-start-line="179" selection-start-column="5" selection-end-line="179" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getEsClientBuild#0;class#EsConfig#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/es-rest/src/main/java/vip/readm/data/es/repository/EsRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="254" column="74" selection-start-line="254" selection-start-column="74" selection-end-line="254" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/vip/readm/common/utils/ClassUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="69" column="67" selection-start-line="69" selection-start-column="67" selection-end-line="69" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/6.4.3/elasticsearch-6.4.3-sources.jar!/org/elasticsearch/search/fetch/subphase/highlight/HighlightField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1108">
+          <caret line="79" column="15" selection-start-line="79" selection-start-column="11" selection-end-line="79" selection-end-column="15" />
+          <folding>
+            <element signature="e#2494#2495#0" expanded="true" />
+            <element signature="e#2528#2529#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/es-rest/src/main/java/vip/readm/data/es/EsRestClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13756">
+          <caret line="891" column="45" selection-start-line="891" selection-start-column="45" selection-end-line="891" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#searchDocument#0;class#EsRestClient#0" />
+            <element signature="method#refreshDocument#0;class#EsRestClient#0" />
+            <element signature="docComment;method#searchDocument#1;class#EsRestClient#0" />
+            <element signature="method#searchDocument#1;class#EsRestClient#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArquillianSettingsConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>es-rest</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: ch.qos.logback:logback-classic:1.2.3</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

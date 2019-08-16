@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=vip.readm.data.es.config.EsConfig,\
+vip.readm.data.es.config.LocalDateTimeConfig
