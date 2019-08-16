@@ -9,7 +9,7 @@
 
 #### 封装的rest版本es客户端. 仿照spring-data 一贯的使用方式，只需少量代码即可转换transport连接方式到restClient连接
 
-## 单独依赖版本，spring boot自动配置，使用方引入只需要定义声明好，文档自动创建es文档，自动配置。定义好仓库开箱即用
+## 单独依赖版本，spring boot自动配置，使用方引入只需定义好文档类，自动创建es文档，定义好仓库类开箱即用常用操作，自动配置
 ## 实现全部ElasticsearchRepository接口
 
 
