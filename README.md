@@ -1,11 +1,11 @@
-# readm-data-elasticsearch(轻量级elasticsearch restClient方式连接框架)
+# readm-data-elasticsearch(轻量级spring boot  集成 elasticsearch restClient方式连接框架)
 ### 轻量级elasticsearch restClient方式连接框架/阿里云elasticsearch连接框架
 
 
 
 ### （实测阿里云es 6.7.0没问题，注意开启公网访问，用户名密码，以及设置好白名单）
 
-#### 基于spring,(spring-data-es部分注解)、elasticsearch高低版本client
+#### 基于spring boot,(spring-data-es部分注解)、elasticsearch高低版本client
 
 #### 封装的rest版本es客户端. 仿照spring-data 一贯的使用方式，只需少量代码即可转换transport连接方式到restClient连接
 
